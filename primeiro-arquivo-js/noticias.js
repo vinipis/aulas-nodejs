@@ -1,9 +1,7 @@
 var http = require('http');
 
 var server = http.createServer(function(req,res){
-
     var categoria = req.url;
-    
     if(categoria == '/tecnologia'){
         res.end("<html><body>Notícias de Tecnologia</body></html>");
     }else if(categoria == '/moda'){
